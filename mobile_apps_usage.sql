@@ -255,7 +255,6 @@ FROM usage_logs
 WHERE user_id = 5
 GROUP BY user_id;
 
-EXPLAIN 
 SELECT user_id, SUM(usage_minutes) AS total_usage
 FROM usage_logs
 WHERE user_id = 5
